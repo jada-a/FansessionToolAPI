@@ -10,7 +10,7 @@ import java.util.List;
 public class AspectConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(AspectRepository aspectRepository){
+    CommandLineRunner commandLineRunner1(AspectRepository aspectRepository){
         return args -> {
             Aspect breath = new Aspect("Breath");
             Aspect life = new Aspect("Life");

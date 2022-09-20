@@ -1,5 +1,6 @@
 package com.example.fansessiontool.aspect;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @ToString
 @Entity
 @Table
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Aspect {
     @Id
     @SequenceGenerator(
@@ -26,11 +28,6 @@ public class Aspect {
     private String name;
 
     public Aspect(){}
-
-    public Aspect(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 
     public Aspect(String name) {
         this.name = name;

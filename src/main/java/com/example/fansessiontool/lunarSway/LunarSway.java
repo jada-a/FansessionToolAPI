@@ -1,4 +1,4 @@
-package com.example.fansessiontool.blood;
+package com.example.fansessiontool.lunarSway;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
@@ -13,27 +13,26 @@ import javax.persistence.*;
 @Entity
 @Table
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
-public class Blood {
+public class LunarSway {
     @Id
     @SequenceGenerator(
-            name = "blood_sequence",
-            sequenceName = "blood_sequence",
+            name = "lunar_sequence",
+            sequenceName = "lunar_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "blood_sequence"
+            generator = "lunar_sequence"
     )
     private Long id;
-    private String color;
 
-    private String hexCode;
+    private String name;
 
-    public Blood() {
-    }
+    private String image;
 
-    public Blood(String color, String hexCode) {
-        this.color = color;
-        this.hexCode = hexCode;
+    public LunarSway(){}
+    public LunarSway(String name, String image) {
+        this.name = name;
+        this.image = image;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.testing.blood;
+package com.example.fansessiontool.blood;
 
 import lombok.Getter;
 import lombok.Setter;

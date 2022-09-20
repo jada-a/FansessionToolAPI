@@ -1,4 +1,4 @@
-package com.example.testing.blood;
+package com.example.fansessiontool.blood;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

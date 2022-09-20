@@ -1,4 +1,4 @@
-package com.example.testing.aspect;
+package com.example.fansessiontool.aspect;
 
 import lombok.Getter;
 import lombok.Setter;

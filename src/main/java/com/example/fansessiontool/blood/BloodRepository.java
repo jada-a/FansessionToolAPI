@@ -1,4 +1,4 @@
-package com.example.testing.blood;
+package com.example.fansessiontool.blood;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

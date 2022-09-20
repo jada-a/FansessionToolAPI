@@ -1,4 +1,4 @@
-package com.example.testing.aspect;
+package com.example.fansessiontool.aspect;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

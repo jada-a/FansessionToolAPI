@@ -1,4 +1,4 @@
-package com.example.testing.blood;
+package com.example.fansessiontool.blood;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,8 @@
 package com.example.fansessiontool.sign;
 
+import com.example.fansessiontool.aspect.Aspect;
 import com.example.fansessiontool.blood.Blood;
+import com.example.fansessiontool.lunarSway.LunarSway;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,18 +28,26 @@ public class Sign {
 
     private String name;
 
-
+    private String image;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "blood_id")
     private Blood bloodColor;
 
-    //private Aspect aspect;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "aspect_id")
+    private Aspect aspect;
 
-    //private LunarSway lunarSway;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "sway_id")
+    private LunarSway lunarSway;
 
     public Sign(){}
-    public Sign(String name, Blood bloodColor) {
+
+    public Sign(String name, String image, Blood bloodColor, Aspect aspect, LunarSway lunarSway) {
         this.name = name;
         this.bloodColor = bloodColor;
+        this.aspect = aspect;
+        this.lunarSway = lunarSway;
+        this.image = image;
     }
 }

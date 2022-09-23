@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BloodRepository extends JpaRepository<Blood, Long> {
-    Blood findByColor(String color);
+    Blood findByColorIgnoreCase(String color);
 }

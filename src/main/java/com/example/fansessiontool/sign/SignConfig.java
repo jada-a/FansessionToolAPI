@@ -947,4 +947,188 @@ public class SignConfig {
         };
     }
 
+    @Bean
+    CommandLineRunner commandLineRunnerJade(SignRepository signRepository){
+        return args -> {
+            //Prospit
+            Sign p1 = new Sign(
+                    "Virus",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virus.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p2 = new Sign(
+                    "Virsci",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virsci.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p3 = new Sign(
+                    "Virpio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virpio.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p4 = new Sign(
+                    "Virist",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virist.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p5 = new Sign(
+                    "Virlo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virlo.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p6 = new Sign(
+                    "Viricorn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Viricorn.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p7 = new Sign(
+                    "Vircer",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Vircer.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p8 = new Sign(
+                    "Virmino",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virmino.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p9 = new Sign(
+                    "Virittanius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virittanius.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p10 = new Sign(
+                    "Virgo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virgo.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p11 = new Sign(
+                    "Virra",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virra.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p12 = new Sign(
+                    "Virnius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Prospit/Virnius.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(1L)
+            );
+
+            signRepository.saveAll(
+                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            //Derse
+            Sign d1 = new Sign(
+                    "Virun",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virun.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d2 = new Sign(
+                    "Virsces",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virsces.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d3 = new Sign(
+                    "Virpia",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virpia.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d4 = new Sign(
+                    "Viries",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Viries.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d5 = new Sign(
+                    "Viro",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Viro.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d6 = new Sign(
+                    "Viriborn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Viriborn.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d7 = new Sign(
+                    "Vircen",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Vircen.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d8 = new Sign(
+                    "Virmini",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virmini.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d9 = new Sign(
+                    "Virittarius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virittarius.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d10 = new Sign(
+                    "Virga",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virga.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d11 = new Sign(
+                    "Virza",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virza.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d12 = new Sign(
+                    "Virrius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/06%20Jade/Derse/Virrius.png",
+                    bloodRepository.getReferenceById(6L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(2L)
+            );
+
+            signRepository.saveAll(
+                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+            );
+        };
+    }
 }

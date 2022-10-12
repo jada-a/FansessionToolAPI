@@ -33,4 +33,8 @@ public class SignController {
     public List<Sign> getSignsByBloodColor(@PathVariable String color){
         return signService.getSignsByBloodColor(color);
     }
+    @GetMapping("/moon/{moon}")
+    public List<Sign> getSignsByLunarSway(@PathVariable String moon){
+        return signService.getSignsByLunarSway(moon);
+    }
  }

@@ -18,6 +18,6 @@ public class AspectService {
         return aspectRepository.findAll();
     }
     public Aspect getAspect(String name){
-        return aspectRepository.findByName(name);
+        return aspectRepository.findByNameIgnoreCase(name);
     }
 }

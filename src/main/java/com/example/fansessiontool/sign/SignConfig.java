@@ -1501,6 +1501,191 @@ public class SignConfig {
             );
         };
     }
+    @Bean
+    CommandLineRunner commandLineRunnerIndigo(SignRepository signRepository){
+        return args -> {
+            //Prospit
+            Sign p1 = new Sign(
+                    "Sagius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p2 = new Sign(
+                    "Sagisci",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagisci.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p3 = new Sign(
+                    "Sagipio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagipio.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p4 = new Sign(
+                    "Sagirist",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagirist.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p5 = new Sign(
+                    "Sagilo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagilo.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p6 = new Sign(
+                    "Sagicorn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagicorn.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p7 = new Sign(
+                    "Sagicer",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagicer.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p8 = new Sign(
+                    "Sagimino",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagimino.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p9 = new Sign(
+                    "Sagittanius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagittanius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p10 = new Sign(
+                    "Sagigo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagigo.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p11 = new Sign(
+                    "Sagira",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Sagira.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p12 = new Sign(
+                    "Saginius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Prospit/Saginius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(1L)
+            );
+
+            signRepository.saveAll(
+                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            //Derse
+            Sign d1 = new Sign(
+                    "Sagiun",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagiun.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d2 = new Sign(
+                    "Sagisces",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagisces.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d3 = new Sign(
+                    "Sagipia",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagipia.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d4 = new Sign(
+                    "Sagiries",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagiries.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d5 = new Sign(
+                    "Sagio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagio.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d6 = new Sign(
+                    "Sagiborn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagiborn.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d7 = new Sign(
+                    "Sagicen",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagicen.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d8 = new Sign(
+                    "Sagimini",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagimini.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d9 = new Sign(
+                    "Sagittarius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagittarius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d10 = new Sign(
+                    "Sagiga",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagiga.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d11 = new Sign(
+                    "Sagiza",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagiza.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d12 = new Sign(
+                    "Sagirius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/09%20Indigo/Derse/Sagirius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(2L)
+            );
+
+            signRepository.saveAll(
+                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+            );
+        };
+    }
+
 
 
 }

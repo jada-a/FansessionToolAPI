@@ -1,5 +1,6 @@
 package com.example.fansessiontool.sign;
 
+import com.example.fansessiontool.aspect.Aspect;
 import com.example.fansessiontool.blood.Blood;
 import com.example.fansessiontool.lunarSway.LunarSway;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,4 +14,5 @@ public interface SignRepository extends JpaRepository<Sign, Long> {
 
     List<Sign> findByBloodColor(Blood bloodColor);
     List<Sign> findByLunarSway(LunarSway lunarSway);
+    List<Sign> findByAspect(Aspect aspect);
 }

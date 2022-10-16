@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AspectRepository extends JpaRepository<Aspect, Long> {
 
-    Aspect findByName(String name);
+    Aspect findByNameIgnoreCase(String name);
 }

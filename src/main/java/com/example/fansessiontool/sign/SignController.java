@@ -37,4 +37,10 @@ public class SignController {
     public List<Sign> getSignsByLunarSway(@PathVariable String moon){
         return signService.getSignsByLunarSway(moon);
     }
+
+    @GetMapping("/aspect/{aspect}")
+    public List<Sign> getSignsByAspect(@PathVariable String aspect){
+        return signService.getSignsByAspect(aspect);
+    }
+
  }

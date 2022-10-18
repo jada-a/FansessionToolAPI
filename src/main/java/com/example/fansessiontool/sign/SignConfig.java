@@ -2057,6 +2057,192 @@ public class SignConfig {
         };
     }
 
+    @Bean
+    CommandLineRunner commandLineRunnerFuchsia(SignRepository signRepository){
+        return args -> {
+            //Prospit
+            Sign p1 = new Sign(
+                    "Pius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pius.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p2 = new Sign(
+                    "Pisci",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pisci.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p3 = new Sign(
+                    "Pipio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pipio.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p4 = new Sign(
+                    "Pirist",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pirist.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p5 = new Sign(
+                    "Pilo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pilo.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p6 = new Sign(
+                    "Picorn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Picorn.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p7 = new Sign(
+                    "Picer",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Picer.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p8 = new Sign(
+                    "Pimino",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pimino.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p9 = new Sign(
+                    "Pittanius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pittanius.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p10 = new Sign(
+                    "Pigo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pigo.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p11 = new Sign(
+                    "Pira",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pira.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p12 = new Sign(
+                    "Pinius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Prospit/Pinius.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(1L)
+            );
+
+            signRepository.saveAll(
+                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            //Derse
+            Sign d1 = new Sign(
+                    "Piun",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Piun.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d2 = new Sign(
+                    "Pisces",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pisces.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d3 = new Sign(
+                    "Pipia",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pipia.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d4 = new Sign(
+                    "Piries",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Piries.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d5 = new Sign(
+                    "Pio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pio.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d6 = new Sign(
+                    "Piborn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Piborn.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d7 = new Sign(
+                    "Picen",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Picen.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d8 = new Sign(
+                    "Pimini",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pimini.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d9 = new Sign(
+                    "Pittarius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pittarius.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d10 = new Sign(
+                    "Piga",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Piga.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d11 = new Sign(
+                    "Piza",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Piza.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d12 = new Sign(
+                    "Pirius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/12%20Fuchsia/Derse/Pirius.png",
+                    bloodRepository.getReferenceById(12L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(2L)
+            );
+
+            signRepository.saveAll(
+                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+            );
+        };
+    }
+
+
 
 
 

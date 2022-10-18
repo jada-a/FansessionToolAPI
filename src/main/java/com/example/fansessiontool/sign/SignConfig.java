@@ -1501,6 +1501,7 @@ public class SignConfig {
             );
         };
     }
+
     @Bean
     CommandLineRunner commandLineRunnerIndigo(SignRepository signRepository){
         return args -> {
@@ -1685,6 +1686,192 @@ public class SignConfig {
             );
         };
     }
+
+    @Bean
+    CommandLineRunner commandLineRunnerPurple(SignRepository signRepository){
+        return args -> {
+            //Prospit
+            Sign p1 = new Sign(
+                    "Caprius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprius.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p2 = new Sign(
+                    "Caprisci",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprisci.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p3 = new Sign(
+                    "Capripio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Capripio.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p4 = new Sign(
+                    "Caprist",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprist.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p5 = new Sign(
+                    "Caprilo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprilo.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p6 = new Sign(
+                    "Capricorn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Capricorn.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p7 = new Sign(
+                    "Capricer",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Capricer.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p8 = new Sign(
+                    "Caprimino",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprimino.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p9 = new Sign(
+                    "Caprittanius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprittanius.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p10 = new Sign(
+                    "Caprigo",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprigo.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p11 = new Sign(
+                    "Caprira",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprira.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(1L)
+            );
+            Sign p12 = new Sign(
+                    "Caprinius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Prospit/Caprinius.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(1L)
+            );
+
+            signRepository.saveAll(
+                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            //Derse
+            Sign d1 = new Sign(
+                    "Capriun",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capriun.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(1L), //Breath
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d2 = new Sign(
+                    "Caprisces",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Caprisces.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(2L), //Life
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d3 = new Sign(
+                    "Capripia",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capripia.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(3L), //Light
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d4 = new Sign(
+                    "Capries",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capries.png",
+                    bloodRepository.getReferenceById(10L),
+                    aspectRepository.getReferenceById(4L), //Time
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d5 = new Sign(
+                    "Caprio",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Caprio.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(5L), //Heart
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d6 = new Sign(
+                    "Capriborn",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capriborn.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(6L), //Rage
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d7 = new Sign(
+                    "Capricen",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capricen.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(7L), //Blood
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d8 = new Sign(
+                    "Caprimini",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Caprimini.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(8L), //Doom
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d9 = new Sign(
+                    "Caprittarius",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Caprittarius.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(9L), //Void
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d10 = new Sign(
+                    "Capriga",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capriga.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(10L), //Space
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d11 = new Sign(
+                    "Capriza",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capriza.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(11L), //Mind
+                    swayRepository.getReferenceById(2L)
+            );
+            Sign d12 = new Sign(
+                    "Capririus",
+                    "https://file.garden/YyjZcNX23DJlLN5o/ExtendedZodiacSigns/10%20Purple/Derse/Capririus.png",
+                    bloodRepository.getReferenceById(9L),
+                    aspectRepository.getReferenceById(12L), //Hope
+                    swayRepository.getReferenceById(2L)
+            );
+
+            signRepository.saveAll(
+                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+            );
+        };
+    }
+
 
 
 

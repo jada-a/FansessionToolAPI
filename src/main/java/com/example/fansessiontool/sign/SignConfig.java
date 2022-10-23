@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -1961,9 +1962,6 @@ public class SignConfig {
                     swayRepository.getReferenceById(1L)
             );
 
-            signRepository.saveAll(
-                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
-            );
 
             //Derse
             Sign d1 = new Sign(
@@ -2052,7 +2050,11 @@ public class SignConfig {
             );
 
             signRepository.saveAll(
-                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+                    Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            signRepository.saveAll(
+                    Arrays.asList(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
             );
         };
     }
@@ -2146,10 +2148,6 @@ public class SignConfig {
                     swayRepository.getReferenceById(1L)
             );
 
-            signRepository.saveAll(
-                    List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
-            );
-
             //Derse
             Sign d1 = new Sign(
                     "Piun",
@@ -2237,7 +2235,11 @@ public class SignConfig {
             );
 
             signRepository.saveAll(
-                    List.of(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+                    Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12)
+            );
+
+            signRepository.saveAll(
+                    Arrays.asList(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
             );
         };
     }
